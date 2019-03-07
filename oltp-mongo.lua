@@ -141,7 +141,7 @@ function create_table(table_num)
       
       c_val = get_c_value()
       pad_val = get_pad_value()
-      k_val = sb_rand(1, sysbench.opt.table_size)
+      k_val = sysbench.rand.default(1, sysbench.opt.table_size)
       
       row = { _id = i, k = k_val, c = c_val, pad = pad_val }
       --print ( "i: ",i,"k: ",k_val,"c: ",c_val,"pad: ",pad_val)
